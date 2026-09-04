@@ -6,8 +6,7 @@
 				Войти
 			</a>
 			<div class="text-sm mt-2 italic">
-				{{ players }}
-				player<template v-if="players !== 1">s</template> online
+				{{ players }} {{ playersWord }} онлайн
 			</div>
 		</div>
 	</div>
@@ -72,6 +71,15 @@ const newStatus = computed(() => {
 	}
 
 	return newStatus
+})
+
+const playersWord = computed(() => {
+	const n = props.players
+	const mod10 = n % 10
+	const mod100 = n % 100
+	if (mod10 === 1 && mod100 !== 11) return 'игрок'
+	if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return 'игрока'
+	return 'игроков'
 })
 
 onMounted(() => {

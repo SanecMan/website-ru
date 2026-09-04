@@ -28,7 +28,7 @@ export default defineNuxtConfig({
 		head: {
 			title: 'Space Station 13',
 			htmlAttrs: {
-				lang: 'en',
+				lang: 'ru',
 			},
 			meta: [
 				{ charset: 'utf-8' },

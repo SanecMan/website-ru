@@ -71,7 +71,7 @@
 						короткий список популярных серверов, либо вы можете сразу открыть
 						полный список и выбрать то, что зацепит взгляд.
 					</p>
-					<div class="flex flex-col md:flex-row gap-4 md:gap-8 py-4">
+					<div class="flex flex-col md:flex-row flex-wrap gap-4 md:gap-6 py-4">
 						<NuxtLink to="/play/quick" class="list-link card">
 							<strong>Быстрый старт</strong>
 							<p>
@@ -140,7 +140,7 @@ definePageMeta({
 	background: #454a56;
 
 	@screen md {
-		@apply w-1/2;
+		@apply flex-1 min-w-[220px];
 	}
 
 	&:before {

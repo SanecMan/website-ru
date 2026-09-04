@@ -10,7 +10,7 @@
 			</button>
 		</template>
 		<div class="dropdown-area">
-			<div class="flex items-center gap-2">
+			<div class="flex items-center gap-2 mb-3">
 				<label class="switch">
 					<input
 						id="filterIncludeAdult"

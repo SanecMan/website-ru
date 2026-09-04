@@ -13,10 +13,8 @@
 						v-if="searchedServers.length"
 						class="hidden sm:inline flex-shrink-0 text-sm italic opacity-60"
 					>
-						Showing {{ searchedServers.length }} server<template
-							v-if="searchedServers.length !== 1"
-							>s</template
-						>
+						Показано {{ searchedServers.length }}
+						{{ serversWord }}
 					</span>
 					<HubServerSearch v-model="search" />
 					<HubFilters :filters="filters" @filters-changed="onFiltersChange" />
@@ -28,7 +26,7 @@
 			<div v-else-if="error" class="p-10 text-center text-primary">
 				<Icon name="fa6-solid:circle-exclamation" size="2em" class="mb-2" />
 				<div class="font-medium">
-					Unable to load servers, please reload to try again.
+					Не удалось загрузить серверы. Обновите страницу и попробуйте снова.
 				</div>
 			</div>
 			<template v-else>
@@ -39,7 +37,7 @@
 						v-bind="server"
 					/>
 				</template>
-				<div v-else class="p-10 text-center italic">No servers found.</div>
+				<div v-else class="p-10 text-center italic">Серверы не найдены.</div>
 			</template>
 			<div class="hub-filters">
 				<Pagination
@@ -57,12 +55,12 @@
 
 		<div class="disclaimer">
 			<Icon name="fa6-solid:circle-exclamation" size="8em" />
-			<p class="mb-2 font-bold">Heads up!</p>
+			<p class="mb-2 font-bold">Внимание!</p>
 			<p>
-				Some servers are filtered out by default because they advertise as
-				adult-only and may contain content inappropriate for all viewers. To
-				include them in the listing, click the settings icon next to the search
-				area.
+				Некоторые серверы по умолчанию скрыты: они помечены как 18+ и могут
+				содержать контент, не подходящий для всех. Чтобы показать их в списке,
+				нажмите на значок настроек рядом с поиском. Часть серверов скрыта
+				постоянно по решению администрации сайта.
 			</p>
 		</div>
 	</div>
@@ -71,7 +69,7 @@
 <script setup>
 definePageMeta({
 	name: 'PageServerBrowser',
-	title: 'Server Browser',
+	title: 'Список серверов',
 })
 
 const loading = ref(true)
@@ -98,6 +96,15 @@ const filteredServers = computed(() => {
 
 const totalPages = computed(() => {
 	return Math.floor(searchedServers.value.length / perPage.value) || 1
+})
+
+const serversWord = computed(() => {
+	const n = searchedServers.value.length
+	const mod10 = n % 10
+	const mod100 = n % 100
+	if (mod10 === 1 && mod100 !== 11) return 'сервер'
+	if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return 'сервера'
+	return 'серверов'
 })
 
 watch(totalPages, (val) => {

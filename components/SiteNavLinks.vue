@@ -143,7 +143,7 @@ const subIsActive = (input) => {
 	}
 
 	&__links {
-		@apply relative mt-2 bg-background rounded-sm max-w-full w-48 overflow-hidden;
+		@apply relative mt-2 bg-background rounded-sm max-w-full w-56 overflow-hidden;
 		box-shadow: 0 0 1px 1px rgb(255 255 255 / 20%);
 
 		> a {

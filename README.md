@@ -6,13 +6,13 @@ The official website for Space Station 13.
 
 ```bash
 # install dependencies
-$ bun install
+bun install
 
 # serve with hot reload at localhost:3000
-$ bun dev
+bun run dev
 
 # build for production
-$ bun build
+bun run build
 ```
 
 This website is built with NuxtJS. For more information on how that works, check out the [documentation](https://nuxtjs.org).

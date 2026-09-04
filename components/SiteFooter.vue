@@ -5,7 +5,7 @@
 		>
 			<img
 				src="~/assets/img/icon.svg"
-				alt="Logo"
+				alt="Логотип"
 				class="w-20 mx-auto mb-4"
 				width="80"
 				height="80"
@@ -16,7 +16,7 @@
 				{{ new Date().getFullYear() }} Space Station 13
 			</p>
 			<p class="flex items-center justify-center">
-				Source available on
+				Исходный код на
 				<a
 					class="inline-flex items-center"
 					href="https://github.com/spacestation13/website"

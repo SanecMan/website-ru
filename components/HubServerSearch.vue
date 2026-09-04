@@ -5,7 +5,7 @@
 			:value="modelValue"
 			type="text"
 			class="w-full md:w-72 bg-secondary rounded-sm py-1 pl-3 pr-10"
-			placeholder="Search"
+			placeholder="Поиск"
 			@input="$emit('update:modelValue', $event.target.value)"
 		/>
 		<button

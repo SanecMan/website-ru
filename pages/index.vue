@@ -6,21 +6,20 @@
 			<div class="max-w-screen-xl mx-auto px-4">
 				<div class="card mb-8 lg:mb-12">
 					<h2 class="mb-4 lg:mb-5 content-heading content-heading--primary">
-						Survive if you can
+						Выживи, если сможешь
 					</h2>
 
 					<p class="mb-4 lg:mb-6">
-						In the not too distant future, crewmembers aboard space stations
-						owned by corporations work tirelessly to keep the lights on. Just
-						doing their job isn't enough - they must also fight to stay alive in
-						the harsh environment of space and survive the dangers that lurk in
-						the darkness.
+						В недалёком будущем члены экипажа на космических станциях
+						корпораций без устали поддерживают жизнь на борту. Одной работы
+						недостаточно — им приходится бороться за выживание в суровых
+						условиях космоса и противостоять опасностям, что скрываются во
+						тьме.
 					</p>
 					<p>
-						Tell your own story in the worlds of Space Station 13, a multiplayer
-						sandbox simulation bristling with features. Developed for over 22
-						years with over a thousand contributors, the world of SS13 is
-						ever-changing.
+						Создайте свою историю в мире Space Station 13 — многопользовательской
+						песочнице с огромным количеством возможностей. Более 22 лет разработки
+						и тысячи авторов делают мир SS13 постоянно живым и меняющимся.
 					</p>
 				</div>
 
@@ -29,43 +28,41 @@
 				<div class="flex flex-col lg:flex-row lg:mb-8">
 					<div class="flex flex-col mb-8 lg:mr-8 lg:mb-0">
 						<h2 class="mb-4 lg:mb-8 content-heading content-heading--primary">
-							Gameplay &amp; features
+							Геймплей и возможности
 						</h2>
 
 						<ul
 							class="flex h-full flex-col justify-between gap-4 ml-6 features"
 						>
 							<li>
-								Play a variety of roles on the station, ranging from lowly staff
-								assistants, to engineers keeping the power on, to the captain
-								ruling all with an iron fist.
+								Играйте за самые разные роли на станции: от простого ассистента
+								до инженера, держащего станцию под напряжением, и капитана,
+								управляющего всем железной рукой.
 							</li>
 							<li>
-								Disrupt the station as varying antagonists: RPG-toting nuclear
-								operatives, shape-shifting aliens, angry wizards hell-bent on
-								revenge, and more.
+								Нарушайте порядок как антагонист: ядерные оперативники с РПГ,
+								оборотни-ксеносы, мстительные волшебники и многое другое.
 							</li>
 							<li>
-								Unleash your creativity with a myriad of complex systems in the
-								course of your work, such as detailed medical simulation and
-								researching mysterious alien artifacts with deadly but
-								advantageous rewards.
+								Проявляйте креативность в сложных системах — от детальной
+								медицинской симуляции до исследований таинственных артефактов с
+								опасными, но полезными эффектами.
 							</li>
 							<li>
-								Experience 100% player-driven gameplay, where no two rounds will
-								play the same.
+								Наслаждайтесь полностью управляемым игроками геймплеем: ни один
+								раунд не повторит другой.
 							</li>
 							<li>
-								Discover ancient ruins and strange creatures on nearby planets,
-								and uncover their secrets.
+								Открывайте древние руины и странных существ на соседних
+								планетах — и раскрывайте их тайны.
 							</li>
 							<li>
-								Suss out imposters among the crew, out to kill you and others!
-								Deduce their identities with quick wits or forensics.
+								Вычисляйте самозванцев среди экипажа, которые охотятся на вас и
+								других! Разоблачайте их умом или криминалистикой.
 							</li>
 							<li>
-								Experience random occupational hazards, such as decompression,
-								radiation storms, rogue AI, and meteor showers.
+								Столкнитесь со случайными опасностями: разгерметизацией,
+								радиационными бурями, сбойным ИИ и метеоритными дождями.
 							</li>
 						</ul>
 					</div>
@@ -78,14 +75,14 @@
 							src="/img/about-preview-1.jpg"
 							width="1000"
 							height="710"
-							:img-attrs="{ loading: 'lazy', alt: 'Preview' }"
+							:img-attrs="{ loading: 'lazy', alt: 'Превью' }"
 						/>
 						<BaseImage
 							class="game-shot-card"
 							src="/img/about-preview-2.jpg"
 							width="1000"
 							height="714"
-							:img-attrs="{ loading: 'lazy', alt: 'Preview' }"
+							:img-attrs="{ loading: 'lazy', alt: 'Превью' }"
 						/>
 					</div>
 				</div>

@@ -5,7 +5,7 @@
 			:src="`/img/server-logos/${logo}`"
 			width="100"
 			height="100"
-			:img-attrs="{ class: 'lazyload rounded-sm', alt: 'Logo' }"
+			:img-attrs="{ class: 'lazyload rounded-sm', alt: 'Логотип' }"
 		/>
 		<div>
 			<div class="mb-4">
@@ -15,7 +15,7 @@
 						:src="`/img/server-logos/${logo}`"
 						width="100"
 						height="100"
-						:img-attrs="{ class: 'lazyload rounded-sm', alt: 'Logo' }"
+						:img-attrs="{ class: 'lazyload rounded-sm', alt: 'Логотип' }"
 					/>
 					{{ name }}
 				</h2>
@@ -36,7 +36,7 @@
 							rel="external"
 							class="cta cta--xs cta--grey block whitespace-nowrap"
 						>
-							Website
+							Сайт
 							<Icon
 								name="fa6-solid:square-arrow-up-right"
 								class="relative ml-1 bottom-[-1px]"

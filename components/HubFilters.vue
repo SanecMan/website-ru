@@ -19,7 +19,7 @@
 					/>
 					<span class="slider" />
 				</label>
-				<label for="filterIncludeAdult">Include adult-content servers</label>
+				<label for="filterIncludeAdult">Показывать серверы 18+</label>
 			</div>
 		</div>
 	</Dropdown>

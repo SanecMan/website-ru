@@ -36,7 +36,7 @@ export default defineNuxtConfig({
 				{
 					name: 'description',
 					content:
-						'Space Station 13 is a community developed, multiplayer round-based role playing game, where players assume the role of a crewmember on a space station.',
+						'Space Station 13 — многопользовательская ролевая игра с раундами, где игроки становятся членами экипажа космической станции. Разрабатывается сообществом.',
 				},
 				{ name: 'format-detection', content: 'telephone=no' },
 				{ property: 'og:type', content: 'website' },

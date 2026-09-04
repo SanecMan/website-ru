@@ -32,32 +32,32 @@ const loop = ref(0)
 const slides = ref([
 	{
 		quote:
-			'Space Station 13 is one of the finest sandbox simulations available, for free or otherwise.',
+			'Space Station 13 — одна из лучших песочниц-симуляторов, бесплатных или нет.',
 		author: 'Rock, Paper, Shotgun',
 	},
 	{
 		quote:
-			'Almost anything is possible, every round is different, and everyone is insane. And those are just some of the reasons I love Space Station 13.',
+			'Возможно почти всё, каждый раунд уникален, и все немного безумны. И это лишь часть причин, почему я люблю Space Station 13.',
 		author: 'PC GAMER',
 	},
 	{
 		quote:
-			"Space Station 13 has fallen prey to a cadre of cultists... What can I possibly do? I pick up my mop and swab at a blood-puddle. Because that's my job. I'm just the janitor.",
+			'Станцию захватили культисты... Что мне делать? Беру швабру и вытираю кровавую лужу. Потому что это моя работа. Я просто уборщик.',
 		author: 'PCGamesN',
 	},
 	{
 		quote:
-			'The requirement for mass co-operation between internet strangers creates an entertaining state of utter shambles. Expect to explode. A lot.',
+			'Необходимость массового сотрудничества незнакомцев из интернета создаёт уморительный хаос. Готовьтесь взрываться. Часто.',
 		author: 'PC GAMER UK',
 	},
 	{
 		quote:
-			'A sci-fi multiplayer sandbox with the same utterly batshit more-is-more design as Dwarf Fortress.',
+			'Научно-фантастическая многопользовательская песочница с тем же безумным подходом «чем больше, тем лучше», что и у Dwarf Fortress.',
 		author: 'Rock, Paper, Shotgun',
 	},
 	{
 		quote:
-			'Space Station 13 is different from any other game because, like so many other great things, it was an accident.',
+			'Space Station 13 не похожа ни на одну другую игру, потому что, как и многое великое, она получилась случайно.',
 		author: 'https://return.life - Robert Mariani',
 	},
 ])

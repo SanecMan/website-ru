@@ -6,9 +6,9 @@
 			>
 				<Icon name="fa6-regular:circle-question" class="mr-2" />
 				<div>
-					This is a small, hand-picked list of servers for new players. For a
-					full list of every server
-					<NuxtLink to="/play/browser">click here</NuxtLink>.
+					Это небольшой список серверов, отобранных для новичков. Полный список
+					всех серверов —
+					<NuxtLink to="/play/browser">здесь</NuxtLink>.
 				</div>
 			</div>
 		</div>
@@ -30,7 +30,7 @@
 <script setup>
 definePageMeta({
 	name: 'PageQuickPlay',
-	title: 'Quick Play',
+	title: 'Быстрый старт',
 })
 
 const { data: servers } = await useAsyncData(

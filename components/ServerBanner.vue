@@ -7,14 +7,14 @@
 			<div class="text-xs italic">
 				<span v-if="loading" class="flex items-center opacity-50">
 					<Icon name="svg-spinners:6-dots-scale" class="mr-1" />
-					Updating info...
+					Обновление...
 				</span>
 				<span v-else-if="error" class="text-primary">
-					Error fetching status
+					Ошибка статуса
 				</span>
 				<span v-else class="opacity-50">
-					{{ players }} player<template v-if="players !== 1">s</template>
-					online
+					{{ players }}
+					{{ playersWord }} онлайн
 				</span>
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 			rel="external"
 			class="cta cta--sm ml-2 py-1"
 		>
-			Join
+			Войти
 		</a>
 	</div>
 </template>
@@ -57,6 +57,15 @@ const players = ref(null)
 const joinLink = computed(() => {
 	if (props.url) return props.url
 	return `byond://${props.ip}:${props.port}`
+})
+
+const playersWord = computed(() => {
+	const n = players.value
+	const mod10 = n % 10
+	const mod100 = n % 100
+	if (mod10 === 1 && mod100 !== 11) return 'игрок'
+	if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return 'игрока'
+	return 'игроков'
 })
 
 const fetchData = async () => {

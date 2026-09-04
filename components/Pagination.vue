@@ -4,7 +4,7 @@
 			<button
 				type="button"
 				:disabled="isInFirstPage"
-				aria-label="Go to first page"
+				aria-label="На первую страницу"
 				@click="onClickFirstPage"
 			>
 				<Icon name="fa6-solid:angles-left" />
@@ -14,7 +14,7 @@
 			<button
 				type="button"
 				:disabled="isInFirstPage"
-				aria-label="Go to previous page"
+				aria-label="На предыдущую страницу"
 				@click="onClickPreviousPage"
 			>
 				<Icon name="fa6-solid:angle-left" />
@@ -26,7 +26,7 @@
 				type="button"
 				:disabled="page.isDisabled"
 				:class="{ active: isPageActive(page.name) }"
-				:aria-label="`Go to page number ${page.name}`"
+				:aria-label="`На страницу ${page.name}`"
 				@click="onClickPage(page.name)"
 			>
 				{{ page.name }}
@@ -37,7 +37,7 @@
 			<button
 				type="button"
 				:disabled="isInLastPage"
-				aria-label="Go to next page"
+				aria-label="На следующую страницу"
 				@click="onClickNextPage"
 			>
 				<Icon name="fa6-solid:angle-right" />
@@ -47,7 +47,7 @@
 			<button
 				type="button"
 				:disabled="isInLastPage"
-				aria-label="Go to last page"
+				aria-label="На последнюю страницу"
 				@click="onClickLastPage"
 			>
 				<Icon name="fa6-solid:angles-right" />

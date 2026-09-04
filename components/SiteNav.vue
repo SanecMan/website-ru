@@ -4,7 +4,7 @@
 			<NuxtLink
 				to="/"
 				class="nav-logo block relative overflow-hidden"
-				aria-label="Home"
+				aria-label="На главную"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
 					<g>

@@ -4,7 +4,7 @@
 		:class="{ 'nav-links--vertical': layout === 'vertical' }"
 	>
 		<div class="page-links flex">
-			<NuxtLink to="/">About</NuxtLink>
+			<NuxtLink to="/">О проекте</NuxtLink>
 			<Dropdown class="nav-sub" :inline="layout === 'vertical'">
 				<template #toggler="{ toggle }">
 					<a
@@ -13,34 +13,26 @@
 						:class="{ 'router-link-active': subIsActive('/play') }"
 						@click.prevent="toggle"
 					>
-						Play Now <Icon name="fa6-solid:angle-down" class="ml-2" />
+						Играть <Icon name="fa6-solid:angle-down" class="ml-2" />
 					</a>
 				</template>
 				<div class="nav-sub__links">
-					<NuxtLink to="/play/how-to">How To Play</NuxtLink>
-					<NuxtLink to="/play/quick">Quick Play</NuxtLink>
-					<NuxtLink to="/play/browser">Server Browser</NuxtLink>
+					<NuxtLink to="/play/how-to">Как начать</NuxtLink>
+					<NuxtLink to="/play/quick">Быстрый старт</NuxtLink>
+					<NuxtLink to="/play/browser">Список серверов</NuxtLink>
 				</div>
 			</Dropdown>
-			<NuxtLink to="/media">Media</NuxtLink>
+			<NuxtLink to="/media">Медиа</NuxtLink>
 		</div>
 
 		<div class="social-links ml-auto pl-4 items-center flex gap-2">
 			<a
-				href="https://twitter.com/SpaceStation13"
+				href="https://t.me/ss13su"
 				target="_blank"
 				rel="external"
-				aria-label="Twitter"
+				aria-label="Telegram"
 			>
-				<Icon name="fa6-brands:twitter" />
-			</a>
-			<a
-				href="https://www.facebook.com/SpaceStation13"
-				target="_blank"
-				rel="external"
-				aria-label="Facebook"
-			>
-				<Icon name="fa6-brands:facebook" />
+				<Icon name="fa6-brands:telegram" />
 			</a>
 		</div>
 	</div>

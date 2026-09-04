@@ -9,7 +9,7 @@
 				height="273"
 			/>
 			<div class="text-center mt-8 mx-4">
-				<NuxtLink to="/play/how-to" class="cta">Play Now</NuxtLink>
+				<NuxtLink to="/play/how-to" class="cta">Играть</NuxtLink>
 			</div>
 		</div>
 		<template v-if="showVideo">

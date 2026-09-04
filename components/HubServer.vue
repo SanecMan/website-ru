@@ -3,7 +3,7 @@
 		<div v-dompurify-html="newStatus" class="hub-server__status" />
 		<div class="ml-4 text-center">
 			<a :href="`byond://BYOND.world.${urlId}`" class="cta cta--sm px-10">
-				Join
+				Войти
 			</a>
 			<div class="text-sm mt-2 italic">
 				{{ players }}
